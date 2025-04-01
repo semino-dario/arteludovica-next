@@ -7,13 +7,44 @@
     background-size: cover;
 }
 
+.headerContainer{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.3em;
+    height: 100vh;
+    width: 100%;
+}
 
 .mainTitle{
-    margin-top: 5%;
     text-align: center;
-    font-size: 2.5rem;
     font-family: vars.$font-title;
     color: vars.$color-title;
     letter-spacing: 3px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
 
+  }
+
+  .mainSubtitle{
+    text-align: center;
+    font-size: 1rem;
+    color: vars.$color-gray;
+    letter-spacing: 1px;
+    
+  }
+
+  .mainImage{
+    width: 90%;
+    max-width: 40rem;
+  }
+
+  @media (min-width: 768px) {
+    .mainTitle{
+        font-size: 700%;
+    }
+    .mainSubtitle{
+        font-size: 1.5rem;
+    }
   }
