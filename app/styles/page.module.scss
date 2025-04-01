@@ -1,5 +1,6 @@
 @use '_vars.scss';
-@use 'home.scss';
+@use 'home/home.scss';
+@use 'home/obras.scss';
 
 
 .containerSection{
@@ -9,4 +10,6 @@
     align-items: center;
     justify-content: center;
     gap:1rem;
+    perspective: 2000px;
+
 }
