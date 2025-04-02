@@ -1,0 +1,14 @@
+@use '../_vars.scss';
+
+
+.containerTextos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: vars.$color-title;
+    width: 100%;
+    max-width: 40rem;
+    padding-inline: 5%;
+}
+
