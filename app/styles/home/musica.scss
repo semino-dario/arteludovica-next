@@ -1,0 +1,111 @@
+@use '../_vars.scss';
+
+
+.musicaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    height: 30rem;
+    color: vars.$color-title;
+    padding-inline: 5%;
+    text-align: center;
+}
+
+.imageDisc{
+    filter: contrast(140%);
+    display: block;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    transition: transform 1s;
+    cursor:pointer;
+    margin-bottom: 10%;
+  
+}
+
+.textMusicContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 5%;
+    height: 30rem;
+
+}
+
+.videoMaskContainer{
+    position:relative;
+    width: fit-content;
+}
+
+.videoMaskContainer > img{
+    width: 280px;
+    height: 200px;
+    border-radius: 5px;
+    object-position:top;
+ 
+}
+
+
+.playIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 0.75rem #E7DBC5);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.playIcon:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video{
+    width: 280px;
+    height: 200px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.75rem #E7DBC5);
+}
+
+@media (min-width: 768px) {
+    .musicaContainer{
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    .textMusicContainer{
+        gap:2rem;
+        margin-top: 5%;
+    
+    }
+
+    .videoMaskContainer > img{
+        width: 500px;
+        height: 350px;
+     
+    }
+
+    .video{
+        width: 500px;
+        height: 350px;
+    }
+}
