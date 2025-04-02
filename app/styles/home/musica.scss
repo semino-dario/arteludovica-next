@@ -1,5 +1,14 @@
 @use '../_vars.scss';
 
+.musicaSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5%;
+    text-align: center;
+    margin-top: 10%;
+}
 
 .musicaContainer{
     display: flex;
@@ -7,12 +16,9 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 5%;
-    width: 100%;
     height: 30rem;
     color: vars.$color-title;
-    padding-inline: 5%;
-    text-align: center;
+
 }
 
 .imageDisc{
@@ -25,6 +31,10 @@
     cursor:pointer;
     margin-bottom: 10%;
   
+}
+
+.turnDisc{
+    transform: rotateZ(720deg);
 }
 
 .textMusicContainer{
@@ -43,8 +53,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 100%;
-    margin-top: 5%;
     height: 30rem;
 
 }
@@ -56,7 +64,7 @@
 
 .videoMaskContainer > img{
     width: 280px;
-    height: 200px;
+    height: 280px;
     border-radius: 5px;
     object-position:top;
  
@@ -81,31 +89,32 @@
 
 .video{
     width: 280px;
-    height: 200px;
+    height: 280px;
     border-radius: 5px;
     filter: drop-shadow(0 0 0.75rem #E7DBC5);
 }
 
 @media (min-width: 768px) {
-    .musicaContainer{
+
+    .musicaSection{
         flex-direction: row;
-        gap: 2rem;
         align-items: flex-start;
+        gap:4rem;
+
     }
+ 
     .textMusicContainer{
         gap:2rem;
-        margin-top: 5%;
+        margin-top: 7%;
     
     }
 
-    .videoMaskContainer > img{
-        width: 500px;
-        height: 350px;
-     
+    .musicaContainer{
+        width: 300px;
     }
 
-    .video{
-        width: 500px;
-        height: 350px;
+    .videoContainer{
+        width: 300px;
     }
+  
 }

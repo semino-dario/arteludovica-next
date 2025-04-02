@@ -16,3 +16,14 @@
 .pointer{
     cursor: pointer;
 }   
+
+
+.closeIcon{
+    cursor: pointer;
+    transition:transform 0.5s;
+
+}
+
+.closeIcon:hover{
+    transform: rotateZ(180deg);
+}

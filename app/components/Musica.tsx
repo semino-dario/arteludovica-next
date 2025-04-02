@@ -11,31 +11,41 @@ import CloseIcon from '../assets/svg/CloseIcon';
 export default function Musica() {
     
     const [renderVideo, setRenderVideo] = useState(false);
+    const [turnDisc, setTurnDisc] = useState(false);
     const [playVideo, setPlayVideo] = useState(false);
 
-    const handleClick = () => {
-        setRenderVideo((prevState) => !prevState);
+    const closeVideo = () => {
+        setRenderVideo(false);
+        setTurnDisc(false);
+        setPlayVideo(false);
     } 
    
-
+    const openVideo = () => {
+      setTurnDisc(true);
+      setTimeout(() => {
+        setRenderVideo(true);
+      }
+      , 1000);
+    }
     return (
 
-        <section >
-            { !renderVideo ?
-            <div className={styles.musicaContainer}>
-              <div className={styles.textMusicContainer}>
+        <section className={styles.musicaSection}>
+          <div className={styles.textMusicContainer}>
                 <h1 className={styles.titleSection}>Música</h1>
                 <p className={styles.textHome}>Julián Gil Ostapiewicz, Adriel Corias Iacovino y Martín Braccone, los integrantes de Odamil Yotsé, compusieron la música de nuestra primera obra. Es buenísima.</p>
               </div>
-              <div>
+            { !renderVideo ?
+            <div className={styles.musicaContainer}>  
+            <div>  
                   <img 
-                  className={styles.imageDisc}
-                  src={imageDisc.src}
-                   alt="imagen del disco con la música de la obra" />
+                    onClick={openVideo}
+                    className={`${styles.imageDisc} ${turnDisc ? styles.turnDisc : ''}`}
+                    src={imageDisc.src}
+                    alt="imagen del disco con la música de la obra" />
                   <MusicButton
-                    onClick={handleClick}
+                    onClick={openVideo}
                   />
-               </div>
+                  </div>
             </div>
             :
             <div className={styles.videoContainer}> 
@@ -57,7 +67,7 @@ export default function Musica() {
 
               } 
               <CloseIcon
-                onClick={handleClick}
+                onClick={closeVideo}
               />
             </div>}
         </section>
