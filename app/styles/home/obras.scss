@@ -7,8 +7,8 @@
     position: relative;
     transition: transform .5s;
     transform-style: preserve-3d;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     -moz-backface-visibility: hidden;
   }
   
@@ -30,8 +30,8 @@
     cursor: pointer;
     display: block;
     object-fit: cover;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
   }
   
@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items:center;
+  justify-content: space-around;
   text-align: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -48,9 +49,69 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background: #1E2223;
   font-family:serif;
   
+  }
+
+  .cardText{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2%;
+    font-family: vars.$font-title-home;
+    color: vars.$color-title;
+  }
+
+  .cardText > h1{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .cardText > p{
+    color: vars.$color-gray;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .containerObras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5%;
+    perspective: 2000px;
+
+  }
+
+  @media (min-width: 768px) {
+    .card{
+        width: 400px;
+        height: 400px;
+    }
+
+    .cardImage{
+        width: 400px;
+        height: 400px;
+    }
+    .cardContent{
+        width: 400px;
+        height: 400px;
+    }
+
+    .cardText > h1{
+        font-size: 2.5rem;
+      }
+    
+      .cardText > p{
+        font-size: 1.2rem;
+      }
+
+      .containerObras{
+        flex-direction: row;
+      }
   }

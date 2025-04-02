@@ -1,9 +1,14 @@
 "use client"
 import styles from '../styles/page.module.scss';
-import imageMDO from "../assets/images/home/volante-musica-de-oficinas.jpeg"
 import { useState } from 'react';
+import CardButton from '../assets/svg/CardButton';
 
-const TurningCard = () => {
+interface TurningCardProps {
+    image:string;
+    title: string;
+    subtitle: string;}
+
+const TurningCard:React.FC<TurningCardProps> = ({image, title, subtitle}) => {
 
      const [isFlipped, setIsFlipped] = useState(false);
      
@@ -13,10 +18,14 @@ const TurningCard = () => {
     return(
         <div  onClick={handleClick} className={`${styles.card} ${isFlipped ? styles.turn : ''}`}>
             <div className={styles.cardImageContainer}>
-                <img className={styles.cardImage} src={imageMDO.src} alt="Image de la obra de teatro Música de oficinas" />
+                <img className={styles.cardImage} src={image} alt="Image de la obra de teatro Música de oficinas" />
             </div>
             <div   className={styles.cardContent}>
-                <p >Ver información de la obra</p>
+                <div className={styles.cardText}>
+                    <h1>{title}</h1>
+                    <p>{subtitle}</p>
+                </div>
+                <CardButton/>
             </div>
         </div>
     )
