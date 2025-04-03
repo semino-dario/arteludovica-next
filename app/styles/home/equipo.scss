@@ -1,0 +1,33 @@
+@use '../vars';
+
+.equipoImg{
+    border: 5px solid #fff;
+}
+
+.equipoCard{
+    display: flex;
+
+    gap:1rem;
+    text-align: left;
+    width: 95%;
+    max-width: 35rem;
+    padding: 3%;
+    border-radius: 10px;
+    color: vars.$color-title;
+}
+
+.equipoCard > img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10%;
+    border: 1px solid #fff;
+}
+
+.equipoCard > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    border-bottom: 1px solid vars.$color-title;
+}
+
