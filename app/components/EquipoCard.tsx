@@ -19,7 +19,7 @@ const EquipoCard:React.FC<EquipoCardProps> = ({data}) => {
               :
             <div className={styles.equipoCard}>
               <img src={data.image} alt="foto de miembro del equipo" />
-              <div>
+              <div className={styles.equipoData}>
                 <h3>{data.name}</h3>
                 <p>{data.desc}</p>
             </div>

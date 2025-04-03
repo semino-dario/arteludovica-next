@@ -47,7 +47,7 @@ const data:any = [{name: "Darío Semino", image: imgDario.src, desc: "Dramaturgo
 
 
 const handleClick = (name:string) =>{
-    const element = data.find((item:any) => item.name === name);
+    const element = data.find((item:{image:string , name:string, desc:string}) => item.name === name);
     if (element) {
         setDataMember({image:element.image, name:element.name, desc:element.desc});
     }
