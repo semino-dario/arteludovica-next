@@ -26,6 +26,14 @@
     text-align: center;
 }
 
+.borderBottom{
+    width: 90%;
+    max-width: 40rem;
+    height: 3rem;
+    border-bottom: 1px solid vars.$color-title;
+   
+}
+
 @media (min-width: 768px) {
     .containerTextos{
       flex-direction: row;
