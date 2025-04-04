@@ -14,7 +14,7 @@
     color: vars.$color-title;
 }
 
-.equipoCard > img{
+.equipoCardImage{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,33 @@
     max-width: 22rem;
     width: 100%;
     gap: 0.3rem;
+}
+
+.equipoData > p{
+    padding-bottom: 1rem;
     border-bottom: 1px solid vars.$color-title;
+}
+
+.equipoData > button{
+    margin: 1rem auto;
+    width: fit-content;
+    background: transparent;
+    color: vars.$color-title;
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border: 1px solid vars.$color-title;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+
+.equipoData > button:hover{
+    background: vars.$color-title;
+    color: green;
+}
+
+.space{
+    height: 13rem;
 }
 

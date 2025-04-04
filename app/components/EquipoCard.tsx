@@ -7,21 +7,24 @@ interface EquipoCardProps {
         name:string,
         desc:string
     }
+
+    onClick: () => void
 }
 
-const EquipoCard:React.FC<EquipoCardProps> = ({data}) => {
+const EquipoCard:React.FC<EquipoCardProps> = ({data, onClick}) => {
 
         return (
           <div>
             {
               data.name === "" ?
-              <div></div>
+              <div ></div>
               :
             <div className={styles.equipoCard}>
-              <img src={data.image} alt="foto de miembro del equipo" />
+                <img className={styles.equipoCardImage} src={data.image} alt="foto de miembro del equipo" />
               <div className={styles.equipoData}>
                 <h3>{data.name}</h3>
                 <p>{data.desc}</p>
+                <button onClick={onClick}>cerrar</button>
             </div>
           </div>
           }

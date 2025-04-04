@@ -139,6 +139,7 @@ const handleClick = (name:string) =>{
 
     <EquipoCard 
       data={dataMember}
+      onClick={() => setDataMember({image:"" , name:"", desc:""})}
     
     />
         </div>

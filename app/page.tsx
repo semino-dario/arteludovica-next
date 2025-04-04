@@ -1,5 +1,6 @@
 
 import Equipo from "./components/Equipo";
+import Footer from "./components/Footer";
 import HeaderHome from "./components/HeaderHome";
 import Musica from "./components/Musica";
 import Obras from "./components/Obras";
@@ -18,7 +19,7 @@ export default function Home() {
          "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/escobar-lerchundi/escobar-lerchundi-2.jpg"]}
       />
       <Equipo/>
-
+      <Footer/>
     </div>
   );
 }

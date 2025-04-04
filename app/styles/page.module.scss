@@ -39,3 +39,25 @@
 .iconHover:hover{
 fill:black;
 }
+
+.linkHome{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+.footer{
+    padding-bottom: 5rem;
+}
+
+.linkHome:hover{
+    color: red;
+}
+
+@media (min-width: 768px) {
+   .linkHome{
+    font-size: 1.2rem;
+   }
+}
