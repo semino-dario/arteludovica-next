@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/page.module.scss";
 import OpenGallery from "../assets/svg/OpenGallery";
+import Link from "next/link";
 
 interface TerritoriosProps {
   images: string[];
@@ -47,7 +48,7 @@ const Territorios: React.FC<TerritoriosProps> = ({ images }) => {
             ))}
         </div>
         </div>
-        <OpenGallery/>
+       <Link href={"/galeria"}> <OpenGallery/></Link>
     </section>
   );
 };

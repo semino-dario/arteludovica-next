@@ -14,8 +14,8 @@ export default function Home() {
       <Musica/>
       <Textos/>
       <Territorios
-      images={["http://www.arteludovica.com.ar/imagenes/imagenes-territorios/escobar-lerchundi/escobar-lerchundi-1.jpg",
-         "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/escobar-lerchundi/escobar-lerchundi-2.jpg"]}
+      images={["/assets/images/territorios/escobar-lerchundi/escobar-lerchundi-1.jpg",
+        "/assets/images/territorios/escobar-lerchundi/escobar-lerchundi-3.jpg", "/assets/images/territorios/grabacion/grabacion-1.jpg"]}
       />
       <Equipo/>
       <Footer/>

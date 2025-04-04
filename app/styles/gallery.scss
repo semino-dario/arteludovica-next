@@ -1,5 +1,17 @@
 @use '_vars.scss';
 
+.containerGallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 8rem;
+  width: 100%;
+}
+
 .gallery {
     display: grid;
     display: grid;

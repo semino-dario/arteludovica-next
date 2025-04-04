@@ -3,16 +3,11 @@
 import { useState } from "react";
 import styles from "../styles/page.module.scss";
 
-const images = [
-  "http://localhost:3000/_next/static/media/IMG_5849.b3afc606.jpg",
-  "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/grabacion/grabacion-1.jpg",
-  "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/grabacion/grabacion-2.jpg",
-  "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/grabacion/grabacion-3.jpg",
-  "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/grabacion/grabacion-3.jpg",
-  "http://www.arteludovica.com.ar/imagenes/imagenes-territorios/grabacion/grabacion-5.jpg",
-];
+interface GalleryProps {
+  images: string[];
+}
 
-const Gallery = () => {
+const Gallery:React.FC<GalleryProps> = ({images}) => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
   
