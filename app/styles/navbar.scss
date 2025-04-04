@@ -1,0 +1,66 @@
+@use './_vars.scss';
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 200;
+    opacity: 1;
+    transition: margin 0.5s;
+    margin-top: -24rem;
+  }
+  
+  .active{
+    margin-top: 10px;
+  }
+
+  .navContainer.active {
+    opacity: 1;
+  }
+  
+  .barraElementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: fit-content;
+    padding: 1rem;
+    transition: margin 0.5s, background 0.5s;
+  }
+  
+  .itemsBarra {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #c14953;
+    transition: padding 0.3s;
+    width: fit-content;
+  }
+  
+  .itemsBarra:hover {
+    padding-left: 50px;
+  }
+  
+  .contenedorIcono {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+  } 
+  
+    .icono {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        transition: transform 0.3s;
+    }
+    .icono:hover {
+        transform: scale(1.2);
+    }
+    

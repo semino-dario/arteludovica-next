@@ -2,6 +2,7 @@ import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
 import HeaderHome from "./components/HeaderHome";
 import Musica from "./components/Musica";
+import NavBar from "./components/Navbar";
 import Obras from "./components/Obras";
 import Territorios from "./components/Territorios";
 import Textos from "./components/Textos";
@@ -9,6 +10,7 @@ import Textos from "./components/Textos";
 export default function Home() {
   return (
     <div>
+      <NavBar/>
       <HeaderHome/>
       <Obras/>
       <Musica/>
