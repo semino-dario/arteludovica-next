@@ -1,8 +1,13 @@
+
+
+import styles from "../styles/page.module.scss";
+import Gallery from "../components/Gallery";
+
 export default function GaleriaHome() {
     return (
-        <div>
-        <br /><br /><br /><br />
-        <h1>Galeria</h1>
-      </div>
+      <section >
+        <h1 className={styles.titleSection}>Territorios</h1>
+        <Gallery/>
+      </section>
     );
   }

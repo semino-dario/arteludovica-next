@@ -142,6 +142,7 @@ const handleClick = (name:string) =>{
       onClick={() => setDataMember({image:"" , name:"", desc:""})}
     
     />
+    
         </div>
 )
     

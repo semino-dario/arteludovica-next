@@ -5,9 +5,10 @@
 @use 'home/textos.scss';
 @use 'home/territorios.scss';
 @use  'home/equipo.scss';
+@use 'gallery.scss';
 
 .containerSection{
-    margin-top: 10%;
+    margin-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +50,7 @@ fill:black;
 }
 
 .footer{
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 .linkHome:hover{

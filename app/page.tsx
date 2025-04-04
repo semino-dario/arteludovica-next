@@ -1,4 +1,3 @@
-
 import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
 import HeaderHome from "./components/HeaderHome";
