@@ -7,7 +7,7 @@ const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleNav = () => {
-    setIsActive(!isActive);
+    setIsActive((prev) => !prev)
   };
 
   const closeNav = () => {
@@ -39,13 +39,18 @@ const NavBar = () => {
           COLOFÓN
         </a>
       </div>
-      <div className="contenedor-icono" onClick={toggleNav}>
-<div className={`${styles.hamburger} ${styles.navBoton} ${styles.hamburgerCel} ${isActive ? styles.isActive : ""}`} id="hamburger-9">
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-    </div></div>
-
+      <label className={styles.label}  >
+      <input className={styles.input}  
+      type="checkbox" 
+      id="check"
+      checked={isActive}
+      onChange={toggleNav}
+      /> 
+      <span className={styles.span} ></span>
+      <span className={styles.span} ></span>
+      <span className={styles.span} ></span>
+    </label>
+ 
 
     </nav>
   );
