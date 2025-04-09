@@ -3,7 +3,7 @@ import sytles from "../styles/page.module.scss"
 import MenuMDO from "../assets/svg/MenuMDO";
 import Organigrama from "../assets/svg/Organigrama";
 import NavBar from "../components/Navbar";
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 interface MDOContextType {
   section: string;
@@ -36,3 +36,11 @@ const [section, setSection] = useState("musica-de-oficinas");
   }
 
   export {MDOContext}
+
+  export const useMDOContext = () => {
+    const context = useContext(MDOContext);
+    if (!context) {
+      throw new Error("useMDOContext must be used within an MDOContext.Provider");
+    }
+    return context;
+  };
