@@ -9,3 +9,41 @@
     height: 100vh;
 
 }
+
+
+.vector{
+    stroke-width: 1px;
+    stroke: #f16c69;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    fill: transparent;
+    animation: dash 3s linear forwards;
+  }
+  
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+
+.etiqueta{
+    cursor: pointer;
+  }
+  
+  .etiqueta:hover{
+    stroke: #C14953;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    fill: transparent;
+    animation: dash 7s linear forwards;
+  }
+
+  .selected{
+    stroke: #C14953;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+    fill: transparent;
+    animation: dash 7s linear forwards;
+  }
