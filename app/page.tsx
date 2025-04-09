@@ -7,7 +7,6 @@ import NavBar from "./components/Navbar";
 import Obras from "./components/Obras";
 import Territorios from "./components/Territorios";
 import Textos from "./components/Textos";
-import styles from "./styles/page.module.scss";
 
 
 export default function Home() {
