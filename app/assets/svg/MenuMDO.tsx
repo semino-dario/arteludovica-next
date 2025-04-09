@@ -1,7 +1,7 @@
 "use client";
 import styles from '../../styles/page.module.scss'
 import { useMobile } from "@/app/lib/useMobile";
-import { useMDOContext } from '@/app/musica-de-oficinas/page';
+import { useMDOContext } from "../../context/ContextMDO";
 
 
 const MenuMDO = () => {
