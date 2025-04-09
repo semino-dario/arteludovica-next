@@ -1,9 +1,7 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import styles from "./styles/page.module.scss";
-
-
-
 
 export const metadata: Metadata = {
   title: "Arteludovica",
@@ -15,6 +13,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <head>
@@ -28,6 +28,7 @@ export default function RootLayout({
       <body className={styles.background}>
         {children}
       </body>
+
     </html>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
 import HeaderHome from "./components/HeaderHome";
@@ -6,10 +7,12 @@ import NavBar from "./components/Navbar";
 import Obras from "./components/Obras";
 import Territorios from "./components/Territorios";
 import Textos from "./components/Textos";
+import styles from "./styles/page.module.scss";
+
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <NavBar/>
       <HeaderHome/>
       <Obras/>

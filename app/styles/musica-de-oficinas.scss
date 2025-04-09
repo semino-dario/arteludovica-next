@@ -1,0 +1,11 @@
+@use './_vars.scss';
+
+.containerMDO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    background: black;
+    height: 100vh;
+
+}
