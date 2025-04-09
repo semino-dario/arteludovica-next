@@ -5,8 +5,12 @@ import Organigrama from "../assets/svg/Organigrama";
 import NavBar from "../components/Navbar";
 import { createContext, useState } from "react";
 
+interface MDOContextType {
+  section: string;
+  setSection: (section: string) => void;
+}
 
-const MDOContext = createContext({section: "", setSection: (section:string) => {}});
+const MDOContext = createContext<MDOContextType | undefined>(undefined);
 
 export default function MusicaDeoficinasHome() {
 

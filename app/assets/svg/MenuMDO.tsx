@@ -62,7 +62,7 @@ else {
                               <path d="M103.5,2.5 L103.5,33.5 L2.5,33.5 L2.5,2.5 L103.5,2.5 Z" id="Rectangle"></path>
                           </g>
                       </g>
-                      <text onClick={()=> context.setSection("elenco")} id="1" transform="translate(69.712200, 22.901976) rotate(8.000000) translate(-69.712200, -22.901976) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text onClick={()=> context?.setSection("elenco")} id="1" transform="translate(69.712200, 22.901976) rotate(8.000000) translate(-69.712200, -22.901976) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="31.2761996" y="31.4019763">Elenco</tspan>
                           <tspan x="108.1482" y="31.4019763" fontSize="21"></tspan>
                       </text>
@@ -73,7 +73,7 @@ else {
                               <path d="M112.011023,2.5 L112.011023,34.1858597 L2.5,34.1858597 L2.5,2.5 L112.011023,2.5 Z" id="Rectangle"></path>
                           </g>
                       </g>
-                      <text onClick={()=> context.setSection("historia")}id="0" transform="translate(72.276582, 42.102503) rotate(2.000000) translate(-72.276582, -42.102503) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text onClick={()=> context?.setSection("historia")}id="0" transform="translate(72.276582, 42.102503) rotate(2.000000) translate(-72.276582, -42.102503) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="25.5245823" y="40.6025032">Historia</tspan>
                       </text>
                   </g>
@@ -84,7 +84,7 @@ else {
                           </g>
                       </g>
                        <text 
-                      onClick={()=> context.setSection("galeria")} 
+                      onClick={()=> context?.setSection("galeria")} 
                       transform="translate(71.399318, 32.122866) rotate(1.000000) translate(-71.399318, -32.122866) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="21" fontWeight="normal" fill="#FFFFFF">
                      <tspan x="34.9013179" y="27.6228663"> Galería</tspan> 
                       </text>
@@ -97,7 +97,7 @@ else {
                               </g>
                           </g>
                       </g>
-                      <text onClick={()=> context.setSection("criticas")} id="2" transform="translate(68.868249, 50.025386) rotate(-7.000000) translate(-68.868249, -50.025386) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text onClick={()=> context?.setSection("criticas")} id="2" transform="translate(68.868249, 50.025386) rotate(-7.000000) translate(-68.868249, -50.025386) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="24.3002487" y="48.5253858">Críticas</tspan>
                       </text>
                   </g>
