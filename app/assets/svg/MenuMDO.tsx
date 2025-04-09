@@ -10,19 +10,16 @@ const MenuMDO = () => {
 const mobile = useMobile();
 
 const context = useContext(MDOContext);
-const [selected, setSelected] = useState(false)
 
 const handleClick = (tagName:string) => {
 
     if (context?.section !== tagName) {
     context?.setSection(tagName)
-    setSelected(true)
 
 }
 
 else {
     context?.setSection("musica-de-oficinas")
-    setSelected(false)
 }
 }
     return (
