@@ -1,7 +1,6 @@
 "use client"
 
 import { useMobile } from "@/app/lib/useMobile";
-import styles from "../../styles/page.module.scss";
 
 const Organigrama = () => {
 

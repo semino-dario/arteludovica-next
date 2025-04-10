@@ -44,10 +44,11 @@ export default function HistoriaMDO () {
                   temas del mismo nombre incluido en el CD de Odamil Yotsé, se ha encontrado entre los videos más vistos
                    del festival “Arte en Video (toma 2)” organizado por Canal (à). </p> </li>
                 <li> <p> <strong> Muestra Fotográfica Itinerante. Música de Oficinas. </strong> </p>
-                <p>La muestra se inauguró el día de 10 de noviembre de 2007 en el evento de presentación del libro-CD "Música de Oficinas"
-                 en Fedro Espacio de Arte. Participó en la 6ta, 7ma y 8va Feria del Libro Independiente y (A). Pudo visitarse durante
-                  los meses de marzo y abril de 2008 en Liberarte Bodega Cultural. Ese mismo año una selección de fotos de Agostina Centurión
-                   participó de la muestra “Recoleta Comparte. Arte Joven sin Selección” en la sala 9 del Centro Cultural Recoleta del 11 al 27 de julio. </p></li>
+                <p>
+                    La muestra se inauguró el día de 10 de noviembre de 2007 en el evento de presentación del libro-CD “Música de Oficinas”
+                     en Fedro Espacio de Arte. Participó en la 6ta, 7ma y 8va Feria del Libro Independiente y (A). Pudo visitarse durante
+                    los meses de marzo y abril de 2008 en Liberarte Bodega Cultural. Ese mismo año una selección de fotos de Agostina Centurión
+                    participó de la muestra “Recoleta Comparte. Arte Joven sin Selección” en la sala 9 del Centro Cultural Recoleta del 11 al 27 de julio.</p></li>
             </ul>
             </div>
              <img src="/assets/images/imagenes-mdo/nanu-tefi.png" alt="escena de la obra" /> 
