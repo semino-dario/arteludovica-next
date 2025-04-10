@@ -5,8 +5,6 @@ import styles from '../styles/page.module.scss';
 import MusicButton from '../assets/svg/MusicButton';
 import imageDisc from '../assets/images/home/disco-musica2.png';
 import imageVideo from '../assets/images/home/fer-fantasma.jpg';
-import PlayIcon from '../assets/svg/PlayIcon';
-import CloseIcon from '../assets/svg/CloseIcon';
 import VideoPlayer from './VideoPlayer';
 
 export default function Musica() {
