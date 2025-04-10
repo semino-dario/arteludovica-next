@@ -30,7 +30,7 @@ const Content = () => {
         <HistoriaMDO />
         :
         section === "elenco" &&
-        <ElencoMDO />
+        <ElencoMDO /> 
         
         
       )}
