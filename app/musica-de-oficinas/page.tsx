@@ -6,6 +6,7 @@ import Organigrama from "../assets/svg/Organigrama";
 import NavBar from "../components/Navbar";
 import { MDOProvider, useMDOContext } from "../context/ContextMDO";
 import HistoriaMDO from "../components/musica-de-oficinas/HistoriaMDO";
+import ElencoMDO from "../components/musica-de-oficinas/ElencoMDO";
 
 export default function MusicaDeoficinasHome() {
   return (
@@ -25,8 +26,12 @@ const Content = () => {
       {section === "musica-de-oficinas" ? (
         <Organigrama />
       ) : (
-        section === "historia" &&
+        section === "historia" ?
         <HistoriaMDO />
+        :
+        section === "elenco" &&
+        <ElencoMDO />
+        
         
       )}
     </div>

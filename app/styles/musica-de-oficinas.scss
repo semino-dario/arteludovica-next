@@ -105,6 +105,33 @@
       gap: 1.5rem;
     }
 
+
+    .elencoMDO{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 95%;
+        margin-top: 5%;
+        padding-bottom: 10%;
+        background: black;
+    }
+
+    .elencoMDO > img{
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .elencoMDO > svg {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .elencoImgCel{
+    width: 100%;
+    max-width: 400px;
+    }
+
   @media (min-width: 1200px) {
   
     .historiaMDO__section{
@@ -117,5 +144,10 @@
     .historiaMDO > div:last-child{
      flex-direction: row-reverse;
 
+    }
+
+    .elencoMDO{
+        flex-direction: row;
+        justify-content: flex-end;
     }
   }
