@@ -7,6 +7,7 @@ import NavBar from "../components/Navbar";
 import { MDOProvider, useMDOContext } from "../context/ContextMDO";
 import HistoriaMDO from "../components/musica-de-oficinas/HistoriaMDO";
 import ElencoMDO from "../components/musica-de-oficinas/ElencoMDO";
+import GalleryMDO from "../components/musica-de-oficinas/GalleryMDO";
 
 export default function MusicaDeoficinasHome() {
   return (
@@ -29,9 +30,11 @@ const Content = () => {
         section === "historia" ?
         <HistoriaMDO />
         :
-        section === "elenco" &&
+        section === "elenco" ?
         <ElencoMDO /> 
-        
+        :
+        section === "galeria" &&
+       <GalleryMDO />
         
       )}
     </div>

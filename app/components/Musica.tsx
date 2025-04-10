@@ -7,6 +7,7 @@ import imageDisc from '../assets/images/home/disco-musica2.png';
 import imageVideo from '../assets/images/home/fer-fantasma.jpg';
 import PlayIcon from '../assets/svg/PlayIcon';
 import CloseIcon from '../assets/svg/CloseIcon';
+import VideoPlayer from './VideoPlayer';
 
 export default function Musica() {
     
@@ -48,28 +49,14 @@ export default function Musica() {
                   </div>
             </div>
             :
-            <div className={styles.videoContainer}> 
-              {!playVideo ?
-              <div className={styles.videoMaskContainer}>
-                <img src={imageVideo.src} alt="imagen de Música de Oficinas" />
-                <PlayIcon
-                onClick={() => setPlayVideo(true)}
-                />
-              </div>
-              :
-              <iframe 
-                className={styles.video}
-                src="https://www.youtube.com/embed/qpXJE-NGDY0?si=a6QtB2xC5DqrMO9s" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen></iframe>
-
-              } 
-              <CloseIcon
-                onClick={closeVideo}
-              />
-            </div>}
+            <VideoPlayer
+              imageVideo={imageVideo.src}
+              closeVideo={closeVideo}
+              playVideo={playVideo}
+              setPlayVideo={setPlayVideo}
+              videoUrl="https://www.youtube.com/embed/qpXJE-NGDY0?si=a6QtB2xC5DqrMO9s"
+            />}
+            
         </section>
     )
 
