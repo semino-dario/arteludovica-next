@@ -1,6 +1,7 @@
 "use client"
 
 import { useMobile } from "@/app/lib/useMobile";
+import styles from "../../styles/page.module.scss";
 
 const Organigrama = () => {
 
@@ -10,7 +11,7 @@ const mobile = useMobile();
         <>
 {
     mobile ?
-<svg   viewBox="0 0 403 527" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<svg  viewBox="0 0 403 527" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g id="iPhone-SE-gen-2" transform="translate(18.000000, -251.000000)">
               <g id="Group-7" transform="translate(-14.391585, 253.289201)">

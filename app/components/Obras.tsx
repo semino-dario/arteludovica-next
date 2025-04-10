@@ -18,17 +18,20 @@ export default function Obras(  ) {
                 image={imageMDO.src}
                 title='Música de oficinas'
                 subtitle='¿Querés trabajar en al dirección de Organigrama?'
-                />
+               link='/musica-de-oficinas'
+               />
                 <TurningCard
                 image={imageTejedoras.src}
                 title='Las tejedoras'
                 subtitle='Una casa llena de sueños y fantasmas'
+                link='/tejedoras'
                 />
                 <TurningCard
                 image={imageBanquete.src}
                 title='El Banquete de Platón'
                 subtitle='Pero...¿quién es Eros?'
-                />
+                link='/banquete'
+               />
                 </div>
         </section>
     )

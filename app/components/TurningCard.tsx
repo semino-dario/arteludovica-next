@@ -2,13 +2,16 @@
 import styles from '../styles/page.module.scss';
 import { useState } from 'react';
 import CardButton from '../assets/svg/CardButton';
+import Link from 'next/link';
 
 interface TurningCardProps {
     image:string;
     title: string;
-    subtitle: string;}
+    subtitle: string;
+    link:string
+}
 
-const TurningCard:React.FC<TurningCardProps> = ({image, title, subtitle}) => {
+const TurningCard:React.FC<TurningCardProps> = ({image, title, subtitle, link}) => {
 
      const [isFlipped, setIsFlipped] = useState(false);
      
@@ -25,7 +28,7 @@ const TurningCard:React.FC<TurningCardProps> = ({image, title, subtitle}) => {
                     <h1>{title}</h1>
                     <p>{subtitle}</p>
                 </div>
-                <CardButton/>
+               <Link href={link}> <CardButton/></Link>
             </div>
         </div>
     )
