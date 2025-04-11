@@ -24,11 +24,20 @@ const [showFullText, setShowFullText] = useState(false);
 const [index, setIndex] = useState(0);
 
 const nextCritica = () => {
-  index < criticas.length - 1 ? setIndex(index+1) : setIndex(0)}
+  if (index < criticas.length - 1) {
+    setIndex(index + 1);
+  } else {
+    setIndex(0);
+  }
+};
 
 const prevCritica = () => {
-  index < criticas.length - 1 ? setIndex(index+1) : setIndex(0)
-}
+  if (index > 0) {
+    setIndex(index - 1);
+  } else {
+    setIndex(criticas.length - 1);
+  }
+};
     return (  
               <section className={styles.criticasContainer}>      
                 <div className={styles.criticasExtract}>
