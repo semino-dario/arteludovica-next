@@ -1,4 +1,3 @@
-import { title } from "process"
 
 export const images = [
     "/assets/images/territorios/escobar-lerchundi/escobar-lerchundi-1.jpg",

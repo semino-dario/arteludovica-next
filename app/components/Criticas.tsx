@@ -3,14 +3,22 @@ import { useState } from 'react';
 import styles from '../styles/page.module.scss';
 import CriticasButton from '../assets/svg/CriticasButton';
 
+interface Critica {
+  extract: string;
+  title: string;
+  text: string;
+}
+
 interface CriticasProps {
-  criticas: any[]
+  criticas: Critica[]
 
 
 }
 
 
 const Criticas:React.FC<CriticasProps> = ({criticas}) => {
+
+  
 
 const [showFullText, setShowFullText] = useState(false);
 const [index, setIndex] = useState(0);
