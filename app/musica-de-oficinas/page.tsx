@@ -8,6 +8,8 @@ import { MDOProvider, useMDOContext } from "../context/ContextMDO";
 import HistoriaMDO from "../components/musica-de-oficinas/HistoriaMDO";
 import ElencoMDO from "../components/musica-de-oficinas/ElencoMDO";
 import GalleryMDO from "../components/musica-de-oficinas/GalleryMDO";
+import Criticas from "../components/Criticas";
+import { criticasMDO } from "../data/data";
 
 export default function MusicaDeoficinasHome() {
   return (
@@ -32,6 +34,12 @@ const Content = () => {
         :
         section === "elenco" ?
         <ElencoMDO /> 
+        :
+        section === "criticas" ?
+        <Criticas
+          criticas={criticasMDO}
+        />
+        
         :
         section === "galeria" &&
        <GalleryMDO />

@@ -1,0 +1,78 @@
+@use './vars.scss';
+
+.criticasContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 950px;
+    min-height: 20rem;
+    border: 2px solid white;
+    padding: 3%;
+    margin-top: 5%;
+    background: black;
+    margin-bottom: 15%;
+
+}
+
+.criticasExtract{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20rem;
+}
+
+.showFullText{
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration:solid;
+    font-size: 1.3rem;
+    font-family: monospace;
+    color: gray;
+}
+
+.showFullText:hover{
+    color: vars.$color-red;
+}
+
+.fullText{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.botonesCriticas{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    gap:1rem;
+    margin-top: 5%;
+  }
+  
+  .criticaSiguiente{
+  transform: rotateY(180deg);
+  }
+
+  .criticasSvg{
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .criticasSvg:hover{
+  fill:vars.$color-red;
+  }
+  
+@media(min-width:768px){
+    .criticasContainer{
+        padding-top: 1%;
+    }
+
+    .criticasExtract{
+        height: 12rem;
+    }
+
+}
