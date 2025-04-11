@@ -10,6 +10,7 @@
 @use 'musica-de-oficinas.scss';
 @use 'video-player.scss';
 @use 'criticas.scss';
+@use 'tejedoras.scss';
 
 
 .containerSection{
@@ -60,6 +61,14 @@ fill:black;
 
 .linkHome:hover{
     color: red;
+}
+
+.menuObra{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:0.2rem;
+    width: 100%;
+    margin-bottom: 3%;
 }
 
 @media (min-width: 768px) {

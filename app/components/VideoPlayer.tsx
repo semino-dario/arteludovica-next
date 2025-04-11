@@ -17,7 +17,7 @@ const VideoPlayer:React.FC<VideoPlayerProps> = ({imageVideo, closeVideo, playVid
     <div className={styles.videoContainer}> 
               {!playVideo ?
               <div className={styles.videoMaskContainer}>
-                <img src={imageVideo} alt="imagen de Música de Oficinas" />
+                <img src={imageVideo} alt="imagen de la obra" />
                 <PlayIcon
                 onClick={() => setPlayVideo(true)}
                 />

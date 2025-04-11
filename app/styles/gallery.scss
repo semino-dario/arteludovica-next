@@ -92,3 +92,40 @@
   .lightboxNext {
     right: 20px;
   }
+
+
+  .containerVideoPlayer{
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-block: 2% 20%;
+    margin-inline: 0.5rem;
+    padding-block: 2rem;
+}
+
+.textGallery{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.containerGalleryObras{
+padding-block: 5%;
+}
+
+
+@media (min-width: 1200px) {
+
+  .containerVideoPlayer{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+
+  .textGallery{
+      font-size: 1.8rem;
+  }
+}

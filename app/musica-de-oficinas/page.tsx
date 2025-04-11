@@ -4,29 +4,32 @@ import styles from "../styles/page.module.scss";
 import MenuMDO from "../assets/svg/MenuMDO";
 import Organigrama from "../assets/svg/Organigrama";
 import NavBar from "../components/Navbar";
-import { MDOProvider, useMDOContext } from "../context/ContextMDO";
+import { MenuProvider, useContextMenu } from "../context/ContextMenu";
 import HistoriaMDO from "../components/musica-de-oficinas/HistoriaMDO";
 import ElencoMDO from "../components/musica-de-oficinas/ElencoMDO";
-import GalleryMDO from "../components/musica-de-oficinas/GalleryMDO";
 import Criticas from "../components/Criticas";
 import { criticasMDO } from "../data/data";
+import GalleryObras from "../components/GalleryObras";
+import { imagesMDO } from "../data/data";
 
 export default function MusicaDeoficinasHome() {
   return (
-    <MDOProvider>
+    <MenuProvider>
       <Content />
-    </MDOProvider>
+    </MenuProvider>
   );
 }
 
 const Content = () => {
-  const { section } = useMDOContext(); // Access the context here
+  const { section } = useContextMenu(); 
 
   return (
-    <div className={`${styles.containerMDO} ${section === "musica-de-oficinas"  ? styles.dinamicHeight : ""}`}>
+    <div className={`${styles.containerMDO} ${section === "main-image"  ? styles.dinamicHeight : ""}`}>
       <NavBar />
+      <div className={styles.containerMenuMDO}>
       <MenuMDO />
-      {section === "musica-de-oficinas" ? (
+      </div>
+      {section === "main-image" ? (
         <Organigrama />
       ) : (
         section === "historia" ?
@@ -42,7 +45,11 @@ const Content = () => {
         
         :
         section === "galeria" &&
-       <GalleryMDO />
+       <GalleryObras 
+       imageVideo="/assets/images/imagenes-mdo/mdo-funciones/mdo-funciones-1.jpeg"
+       videoUrl="/assets/images/imagenes-mdo/mdo-funciones/mdo-funciones-1.jpeg"
+       images={imagesMDO}
+       />
         
       )}
     </div>

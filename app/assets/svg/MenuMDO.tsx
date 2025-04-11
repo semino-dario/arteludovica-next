@@ -1,7 +1,7 @@
 "use client";
 import styles from '../../styles/page.module.scss'
 import { useMobile } from "@/app/lib/useMobile";
-import { useMDOContext } from "../../context/ContextMDO";
+import { useContextMenu } from "../../context/ContextMenu";
 
 
 const MenuMDO = () => {
@@ -9,7 +9,7 @@ const MenuMDO = () => {
 const mobile = useMobile();
 
 
-const { section, setSection } = useMDOContext();
+const { section, setSection } = useContextMenu();
 
 
 const handleClick = (tagName:string) => {
@@ -20,7 +20,7 @@ const handleClick = (tagName:string) => {
 }
 
 else {
-    setSection("musica-de-oficinas")
+    setSection("main-image")
 }
 }
     return (
@@ -30,13 +30,18 @@ else {
     {
     mobile ?
 
-    <svg width="80%" className={styles.vector} viewBox="0 0 295 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg  width="80%" className={styles.vector} viewBox="0 0 295 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g id="iPhone-SE-gen-2" transform="translate(-40.000000, -15.000000)">
               <g id="Group-5" transform="translate(40.376799, 17.000000)">
-                  <g id="Group" transform="translate(5.623201, 0.000000)">
-                      <g id="a-link" transform="translate(10.001751, 7.710799)" fill="#FFFFFF" fillOpacity="0" fillRule="nonzero" fontFamily="AmericanTypewriter, American Typewriter" fontSize="27.972028" fontWeight="normal">
+                  <g onClick={()=> setSection("main-image")}   id="Group" transform="translate(5.623201, 0.000000)">
+                      {/* <g id="a-link" transform="translate(10.001751, 7.710799)" fill="#FFFFFF" fillOpacity="0" fillRule="nonzero" fontFamily="AmericanTypewriter, American Typewriter" fontSize="27.972028" fontWeight="normal">
                           <text id="Música-de-Oficinas">
+                              <tspan x="0" y="25">Música de Oficinas</tspan>
+                          </text>
+                      </g>
+                      <g id="a-link" transform="translate(10.001751, 7.710799)" fill="#D8D8D8" fillOpacity="0" fillRule="nonzero" fontFamily="AmericanTypewriter, American Typewriter" fontSize="27.972028" fontWeight="normal" stroke="#979797" strokeWidth="1.16550117">
+                          <text  id="Música-de-Oficinas">
                               <tspan x="0" y="25">Música de Oficinas</tspan>
                           </text>
                       </g>
@@ -44,12 +49,7 @@ else {
                           <text id="Música-de-Oficinas">
                               <tspan x="0" y="25">Música de Oficinas</tspan>
                           </text>
-                      </g>
-                      <g id="a-link" transform="translate(10.001751, 7.710799)" fill="#D8D8D8" fillOpacity="0" fillRule="nonzero" fontFamily="AmericanTypewriter, American Typewriter" fontSize="27.972028" fontWeight="normal" stroke="#979797" strokeWidth="1.16550117">
-                          <text id="Música-de-Oficinas">
-                              <tspan x="0" y="25">Música de Oficinas</tspan>
-                          </text>
-                      </g>
+                      </g> */}
                       <g id="a-link" transform="translate(10.001751, 7.710799)" fill="#000000" fontFamily="AmericanTypewriter, American Typewriter" fontSize="27.972028" fontWeight="normal" stroke="#FFFFFF" strokeWidth="1.16550117">
                           <text id="Música-de-Oficinas">
                               <tspan x="0" y="25">Música de Oficinas</tspan>
@@ -63,7 +63,8 @@ else {
                               <path d="M103.5,2.5 L103.5,33.5 L2.5,33.5 L2.5,2.5 L103.5,2.5 Z" id="Rectangle"></path>
                           </g>
                       </g>
-                      <text onClick={()=> setSection("elenco")} id="1" transform="translate(69.712200, 22.901976) rotate(8.000000) translate(-69.712200, -22.901976) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text className={`${styles.etiqueta} ${ section === "elenco" && styles.selected}`} 
+                            onClick={()=> handleClick("elenco")} id="1" transform="translate(69.712200, 22.901976) rotate(8.000000) translate(-69.712200, -22.901976) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="31.2761996" y="31.4019763">Elenco</tspan>
                           <tspan x="108.1482" y="31.4019763" fontSize="21"></tspan>
                       </text>
@@ -74,7 +75,8 @@ else {
                               <path d="M112.011023,2.5 L112.011023,34.1858597 L2.5,34.1858597 L2.5,2.5 L112.011023,2.5 Z" id="Rectangle"></path>
                           </g>
                       </g>
-                      <text onClick={()=> setSection("historia")}id="0" transform="translate(72.276582, 42.102503) rotate(2.000000) translate(-72.276582, -42.102503) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text className={`${styles.etiqueta} ${ section === "historia" && styles.selected}`}
+                             onClick={()=> handleClick("historia")} id="0" transform="translate(72.276582, 42.102503) rotate(2.000000) translate(-72.276582, -42.102503) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="25.5245823" y="40.6025032">Historia</tspan>
                       </text>
                   </g>
@@ -85,7 +87,8 @@ else {
                           </g>
                       </g>
                        <text 
-                      onClick={()=> setSection("galeria")} 
+                      className={`${styles.etiqueta} ${ section === "galeria" && styles.selected}`}
+                      onClick={()=> handleClick("galeria")} 
                       transform="translate(71.399318, 32.122866) rotate(1.000000) translate(-71.399318, -32.122866) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="21" fontWeight="normal" fill="#FFFFFF">
                      <tspan x="34.9013179" y="27.6228663"> Galería</tspan> 
                       </text>
@@ -98,7 +101,9 @@ else {
                               </g>
                           </g>
                       </g>
-                      <text onClick={()=> setSection("criticas")} id="2" transform="translate(68.868249, 50.025386) rotate(-7.000000) translate(-68.868249, -50.025386) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
+                      <text 
+                        className={`${styles.etiqueta} ${ section === "criticas" && styles.selected}`} 
+                        onClick={()=> handleClick("criticas")}id="2" transform="translate(68.868249, 50.025386) rotate(-7.000000) translate(-68.868249, -50.025386) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="24" fontWeight="normal" fill="#FFFFFF">
                           <tspan x="24.3002487" y="48.5253858">Críticas</tspan>
                       </text>
                   </g>
@@ -127,16 +132,20 @@ else {
                     <text id="Música-de-Oficinas" strokeWidth="2" fontFamily="AmericanTypewriter, American Typewriter" fontSize="48" fontWeight="normal" fill="#000000">
                         <tspan x="223.026114" y="57">Música de Oficinas</tspan>
                     </text>
-                    <text className={`${styles.etiqueta} ${ section === "historia" && styles.selected}`} onClick={()=> handleClick("historia")}   id="0" strokeWidth="2" transform="translate(89.627771, 140.923045) rotate(8.000000) translate(-89.627771, -140.923045) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
+                    <text className={`${styles.etiqueta} ${ section === "historia" && styles.selected}`} 
+                          onClick={()=> handleClick("historia")}   id="0" strokeWidth="2" transform="translate(89.627771, 140.923045) rotate(8.000000) translate(-89.627771, -140.923045) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
                         <tspan x="22.1277714" y="152.923045">historia</tspan>
                     </text>
-                    <text className={`${styles.etiqueta} ${ section === "elenco" && styles.selected}`} onClick={()=> handleClick("elenco")} id="1" strokeWidth="2" transform="translate(318.335797, 171.219234) rotate(-7.000000) translate(-318.335797, -171.219234) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
+                    <text className={`${styles.etiqueta} ${ section === "elenco" && styles.selected}`} 
+                          onClick={()=> handleClick("elenco")} id="1" strokeWidth="2" transform="translate(318.335797, 171.219234) rotate(-7.000000) translate(-318.335797, -171.219234) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
                         <tspan x="262.835797" y="183.219234">elenco</tspan>
                     </text>
-                    <text  className={`${styles.etiqueta} ${ section === "criticas" && styles.selected}`} onClick={()=> handleClick("criticas")}  id="2" strokeWidth="2" transform="translate(575.312174, 160.413608) rotate(3.000000) translate(-575.312174, -160.413608) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
+                    <text  className={`${styles.etiqueta} ${ section === "criticas" && styles.selected}`} 
+                          onClick={()=> handleClick("criticas")}  id="2" strokeWidth="2" transform="translate(575.312174, 160.413608) rotate(3.000000) translate(-575.312174, -160.413608) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
                         <tspan x="510.312174" y="172.413608">críticas</tspan>
                     </text>
-                    <text className={`${styles.etiqueta} ${ section === "galeria" && styles.selected}`}  onClick={()=> handleClick("galeria")} strokeWidth="2" transform="translate(809.184429, 155.424538) rotate(13.000000) translate(-809.184429, -155.424538) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
+                    <text className={`${styles.etiqueta} ${ section === "galeria" && styles.selected}`}  
+                          onClick={()=> handleClick("galeria")} strokeWidth="2" transform="translate(809.184429, 155.424538) rotate(13.000000) translate(-809.184429, -155.424538) " fontFamily="AmericanTypewriter, American Typewriter" fontSize="36" fontWeight="normal" fill="#000000">
                         <tspan x="749.684429" y="167.424538"> 
                           galería</tspan>
                     </text>

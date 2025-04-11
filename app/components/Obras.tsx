@@ -24,13 +24,13 @@ export default function Obras(  ) {
                 image={imageTejedoras.src}
                 title='Las tejedoras'
                 subtitle='Una casa llena de sueños y fantasmas'
-                link='/tejedoras'
+                link='/las-tejedoras'
                 />
                 <TurningCard
                 image={imageBanquete.src}
                 title='El Banquete de Platón'
                 subtitle='Pero...¿quién es Eros?'
-                link='/banquete'
+                link='/el-banquete'
                />
                 </div>
         </section>

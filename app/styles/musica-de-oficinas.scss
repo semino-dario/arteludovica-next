@@ -11,6 +11,13 @@
     font-size: 1.2rem;
 }
 
+.containerMenuMDO{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .dinamicHeight{
     height: 100vh;
 }
@@ -132,26 +139,7 @@
     max-width: 400px;
     }
 
-    .containerVideoPlayer{
-        display: flex;        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid white;
-        margin-block: 15%;
-        margin-inline: 0.5rem;
-    }
-
-    .textGallery{
-        font-size: 1.2rem;
-        text-align: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-.containerGalleryObras{
-    padding-bottom: 10%;
-}
+    
 
   @media (min-width: 1200px) {
   
