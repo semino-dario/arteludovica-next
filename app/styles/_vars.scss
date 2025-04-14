@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Dancing+Script:wght@400..700&display=swap');
 
 @font-face {
 
@@ -8,11 +9,17 @@
     font-style:normal;
     font-display:swap;
   }
+
+
+
+
 $font-title: "Bluefish", sans-serif;
+$font-title-home: "Allerta Stencil", sans-serif;
+$font-las-tejedoras: "Dancing Script", cursive;
+
 
 $color-title:#E7DBC5;
 $color-red: #C14953;
 $color-gray:#ADA0A6;
 
-$font-title-home: "Allerta Stencil", sans-serif;
   

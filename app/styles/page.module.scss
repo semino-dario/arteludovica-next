@@ -64,15 +64,38 @@ fill:black;
 }
 
 .menuObra{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap:0.2rem;
-    width: 100%;
-    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 3%;   
+}
+
+.menuObra > p {
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.menuObra > p:hover {
+color: vars.$color-red;
+transition: color 0.3s ease-in-out;
+}
+
+.selecetdItem{
+    color: vars.$color-red;
 }
 
 @media (min-width: 768px) {
    .linkHome{
     font-size: 1.2rem;
    }
+
+   .menuObra{
+    gap:1.7rem;
+   }
+
+  .menuObra > p{
+    font-size: 1.5rem;
+
+  }
 }

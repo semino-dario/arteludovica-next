@@ -7,7 +7,8 @@ import { MenuProvider, useContextMenu } from '../context/ContextMenu';
 import styles from '../styles/page.module.scss'
 import { imagesTejedoras, criticasTejedoras } from '../data/data';
 import Criticas from '../components/Criticas';
-
+import MainImageLasTejedoras from '../components/las-tejedoras/MainImageLasTejedoras';
+import HistoriaTejedoras from '../components/las-tejedoras/HistoriaTejedoras';
 
 export default function LasTehjedorassHome() {
   return (
@@ -23,7 +24,10 @@ const Content = () => {
     const { section } = useContextMenu(); 
 
     return (
-        <section className={styles.containerLasTejedoras}>
+        <section className={`${styles.containerLasTejedoras} 
+        ${section === "main-image"  ? styles.dinamicHeight : ""} 
+        ${section !== "galeria" ? styles.dynamicAlign : ""}
+        `}>
           <NavBar/>
         <div className={styles.headerLasTejedoras}>
         <h1 className={styles.mainTitleLasTejedoras}>Las tejedoras</h1>
@@ -32,7 +36,10 @@ const Content = () => {
           />  
         </div>
         { section === "main-image" ?
-        <img src="/assets/images/imagenes-tejedoras/tejedoras-17.jpg" alt="imagen de la obra" />
+        <MainImageLasTejedoras/>
+        :
+        section === "historia" ?
+        <HistoriaTejedoras />
         :
         section === "galeria" ?
         <GalleryObras
