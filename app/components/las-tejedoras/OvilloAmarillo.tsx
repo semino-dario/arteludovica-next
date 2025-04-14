@@ -11,7 +11,7 @@ export default function OvilloAmarillo () {
 
     return(
     <div className={styles.imagenOvillo1}>
-      <img className={`${styles.ovillo7} ${turn ? styles.turn : ""}`}  
+      <img className={`${styles.ovillo7} ${turn ? styles.girar : ""}`}  
       src="assets/images/imagenes-tejedoras/ovillos/ovillo7.png" 
       height="90px" width="90px" alt="ovillo de lana" />
         <HiloAmarrillo />

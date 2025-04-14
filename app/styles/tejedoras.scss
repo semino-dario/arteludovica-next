@@ -176,9 +176,58 @@ border-color: #E7DBC5;}
         transition: transform 3s;
         }
 
-        .turn{
+        .girar{
           transform: rotateZ(200deg);
           }
+
+    .elencoContainer{
+      display: flex;
+      flex-direction: column;
+      gap:1rem;
+      width: 95%;
+      max-width: 55rem;
+      margin-top: 3%;
+
+    }
+.imagenElenco{
+  border: 2px solid vars.$color-title;
+  width: 100%;
+  max-height: 20rem;
+}
+
+
+.elencoList{
+  padding-inline: 1rem;
+  margin-bottom: 10%;
+}
+
+
+    .ovillo8{
+      position: absolute;
+      margin-left: -3%;
+      transition: transform 5s;
+      margin-top: -2%;
+      animation-name: slidein;
+      animation-duration: 5s;
+      }
+      
+      @keyframes slidein {
+      
+      
+        from {
+        margin-left: 11%;
+      }
+      
+      to{
+      margin-left: -3%;
+      
+      }
+      
+      }
+      
+      .girar2{
+      transform: rotateZ(380deg);
+        }
 
 @media(min-width: 768px) {
     .mainTitleLasTejedoras{
@@ -196,5 +245,9 @@ border-color: #E7DBC5;}
   .funcionesTejedoras{
     border: 2px solid vars.$color-title;
     padding: 5%;
+  }
+
+  .elencoContainer{
+    flex-direction: row;
   }
 }

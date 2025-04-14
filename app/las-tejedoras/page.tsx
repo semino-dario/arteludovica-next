@@ -9,6 +9,7 @@ import { imagesTejedoras, criticasTejedoras } from '../data/data';
 import Criticas from '../components/Criticas';
 import MainImageLasTejedoras from '../components/las-tejedoras/MainImageLasTejedoras';
 import HistoriaTejedoras from '../components/las-tejedoras/HistoriaTejedoras';
+import ElencoTejedoras from '../components/las-tejedoras/ElencoTejedoras';
 
 export default function LasTehjedorassHome() {
   return (
@@ -40,6 +41,9 @@ const Content = () => {
         :
         section === "historia" ?
         <HistoriaTejedoras />
+        :
+        section === "elenco" ?
+        <ElencoTejedoras/>
         :
         section === "galeria" ?
         <GalleryObras
