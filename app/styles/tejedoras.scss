@@ -201,15 +201,14 @@ border-color: #E7DBC5;}
   margin-bottom: 10%;
 }
 
-
-    .ovillo8{
-      position: absolute;
-      margin-left: -3%;
-      transition: transform 5s;
-      margin-top: -2%;
-      animation-name: slidein;
-      animation-duration: 5s;
-      }
+.ovillo8{
+  position: absolute;
+  margin-left: -3%;
+  transition: transform 5s;
+  margin-top: -2%;
+  animation-name: slidein;
+  animation-duration: 5s;
+}
       
       @keyframes slidein {
       

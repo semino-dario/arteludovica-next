@@ -154,7 +154,58 @@ export const images = [
              "/assets/images/imagenes-tejedoras/DPP_0070.jpg", 
              "/assets/images/imagenes-tejedoras/DPP_0071.jpg"
             ]
+export const imagesBanquete = [
+    "/assets/images/imagenes-banquete/banquete-danza/danza1.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza2.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza3.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza4.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza5.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza6.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza7.webp",
+    "/assets/images/imagenes-banquete/banquete-danza/danza8.webp",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-1.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-2.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-3.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-4.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-5.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-6.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-7.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-8.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-9.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-10.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-11.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-12.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-13.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-14.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-15.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-16.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-17.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-18.jpeg",
+    "/assets/images/imagenes-banquete/banquete-funciones/banquete-funciones-19.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/banquet-saludo.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/banquete-antes-funcion.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/banquete-antes-funcion-2.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-1.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-2.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-3.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-4.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-5.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-6.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-7.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-8.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-9.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-10.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-11.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-12.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-13.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-14.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-15.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-16.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-17.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-18.jpeg",
+    "/assets/images/imagenes-banquete/ensayo-banquete/ensayo-banquete-19.jpeg",
 
+]
 
             export const criticasMDO =[
                 {title: 'Cecilia de la Cruz / www.leedor.com', 
@@ -189,3 +240,34 @@ export const images = [
 
             }
         ]
+
+
+    export const comentariosBanquete = [
+        {
+            title:"Sergio - 13/07/2013",
+            extract: '"Me encanto la puesta y la idea de la obra. Me saco absolutamente el prejuicio que tuve antes de ir a verla pensando que iba a ver un libro en puesta escénica. Un aplauso muy grande para todos los que trabajan allí. RECOMENDADA 100%"'
+        },
+
+        {
+            title:"Gabriel - 20/07/2013",
+            extract:'"una obra muy completa, con danza, dialogos muy ricos y actuaciones excelentes. Vale la pena destacar la actuacion de agaton y de aristofanes, dos actores que atrapan con su poesia y expresion tanto corporal como dialectica. La verdad que es una obra excelente y muy recomendable"'
+        },
+
+        {
+            title:'Ana - 08/07/2013',
+            extract:'Fui a verla el sábado y lo disfruté muchísimo, muy buenas actuaciones y las coreografías. Recomiendo!!'
+        },
+
+        {
+            title: 'Elena - 03/07/2013',
+            extract: '"Durante el desarrollo del espectáculo los actores logran transmitir la escencia de lo que para Platón era el deseo como motor de la vida. Excelente adaptación de un clásico. Gran profesionalismo prolijidad y creatividad en la dirección de la obra"'
+        },
+
+        {
+            title:'Mirta - 29/06/2013',
+            extract: '"Vi la obra, y me parecio muy bueno, poder acercarme a este texto, momentos muy buenos.. la musica excelente, las bailarinas de buen nivel, los actores en general con excelente nivel.. momentos emotivos.. recomendable para acercarse a un texto complejo como Platon!! veanla!!"'
+        }
+
+
+
+    ]

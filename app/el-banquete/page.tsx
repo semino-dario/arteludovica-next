@@ -1,8 +1,61 @@
+"use client"
+
+import GalleryObras from '../components/GalleryObras';
+import MenuObra from '../components/MenuObra';
+import NavBar from '../components/Navbar';
+import { MenuProvider, useContextMenu } from '../context/ContextMenu';
+import styles from '../styles/page.module.scss'
+import { imagesBanquete, comentariosBanquete } from '../data/data';
+import Criticas from '../components/Criticas';
+import HistoriaBanquete from '../components/el-banquete/HistoriaBanquete';
+
 export default function BanqueteHome() {
+  return (
+    <MenuProvider>
+      <Content />
+    </MenuProvider>
+  );
+}
+
+
+const Content = () => {
+
+    const { section } = useContextMenu(); 
+
     return (
-      <div>
-        <br /><br /><br /><br />
-        <h1>BANQUETE</h1>
-      </div>
+        <section className={`${styles.containerBanquete} 
+        ${section === "main-image"  ? styles.dinamicHeight : ""} 
+        ${section !== "galeria" ? styles.dynamicAlign : ""}
+        `}>
+          <NavBar/>
+        <div className={styles.headerBanquete}>
+        <h1 >El Banquete de Platón</h1>
+          <MenuObra
+            addStyle={styles.menuBanquete}
+          />  
+        </div>
+        { section === "main-image" ?
+        <h1>IMAGEN PRINCIPAL</h1>
+        :
+        section === "historia" ?
+        <HistoriaBanquete/>
+        :
+        section === "elenco" ?
+        <h1>elenco</h1>
+        :
+        section === "galeria" ?
+        <GalleryObras
+        images={imagesBanquete}
+        />  
+        :
+        section === "criticas" &&
+        <Criticas
+          criticas={comentariosBanquete}
+        />  
+      }
+      
+
+
+      </section>
     );
   }

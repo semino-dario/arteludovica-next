@@ -6,7 +6,7 @@ import CriticasButton from '../assets/svg/CriticasButton';
 interface Critica {
   extract: string;
   title: string;
-  text: string;
+  text?: string;
 }
 
 interface CriticasProps {
@@ -39,11 +39,20 @@ const prevCritica = () => {
   }
 };
     return (  
-              <section className={styles.criticasContainer}>      
+              <section className={styles.criticasContainer}> 
+              { !criticas[index].text &&
+              <div className={styles.comentariosHeader} >
+                <h2>Comentarios del público</h2>
+                <p>Registrados durante las funciones de 2013
+                Se pueden ver más comentarios en 
+                 </p> <a href="https://www.alternativateatral.com/opiniones27837-el-banquete-de-platon" target='_blank'>
+                 ALTERNATIVA TEATRAL
+                </a>  
+              </div>}
                 <div className={styles.criticasExtract}>
                     <p>{criticas[index].extract}</p>
                     <h2>{criticas[index].title}</h2>
-                    { !showFullText && 
+                    { !showFullText && criticas[index].text &&
                     <p className={styles.showFullText} 
                     onClick={()=> setShowFullText(true)}>ver texto completo</p>
                     }

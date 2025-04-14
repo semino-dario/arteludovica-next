@@ -5,8 +5,8 @@ import VideoPlayer from "./VideoPlayer"
 import { useState } from "react";
 
 interface GalleryObrasProps{
-  imageVideo:string,
-  videoUrl:string
+  imageVideo?:string,
+  videoUrl?:string
   images:string[]
 }
 
@@ -15,6 +15,7 @@ const [playVideo, setPlayVideo] = useState(false);
 
   return (
     <section className={styles.containerGalleryObras}>
+    {imageVideo && videoUrl &&
     <div className={styles.containerVideoPlayer}>
         
        <VideoPlayer
@@ -24,7 +25,7 @@ const [playVideo, setPlayVideo] = useState(false);
         setPlayVideo={() => {setPlayVideo(true)}}
          />
             <p className={styles.textGallery}>Video realizado por Guillermo Balbuena</p>
-    </div>
+    </div>}
     <p className={styles.textGallery}>Fotografías de Agostina Centurión</p>
     <br /> <br />
     <Gallery

@@ -1,0 +1,58 @@
+@use './vars.scss';
+
+.containerBanquete{
+    background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(30, 34, 35, 1) 85%,
+    rgba(30, 34, 35, 1) 87%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:vars.$color-title;
+  font-size:1.2rem;
+  
+}
+
+.headerBanquete{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 5%;
+color: vars.$color-title;
+}
+
+.headerBanquete > h1 {
+    font-family: vars.$font-banquete;
+    font-size: 2rem;
+}
+
+.historiaBanqueteContainer{
+    width: 100%;
+    max-width: 50rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0.5rem;
+    margin: 0 auto;
+}
+
+.historiaBanqueteContainer > img{
+    width: 100%;
+    max-width: 30rem;
+ 
+}
+
+
+
+@media(min-width:768px){
+    .headerBanquete > h1 {
+        font-size: 3.5rem;
+    }
+    
+.historiaBanqueteContainer {
+    align-items: flex-end;
+}
+}
