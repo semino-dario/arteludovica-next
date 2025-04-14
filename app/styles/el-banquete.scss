@@ -12,6 +12,8 @@
   background-size: cover;
   color:vars.$color-title;
   font-size:1.2rem;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -19,8 +21,10 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+gap: 1rem;
 padding-top: 5%;
 color: vars.$color-title;
+margin-bottom: 1rem;
 }
 
 .headerBanquete > h1 {
@@ -28,7 +32,11 @@ color: vars.$color-title;
     font-size: 2rem;
 }
 
-.historiaBanqueteContainer{
+.menuBanquete > p{
+   font-size: 1rem;
+}
+
+.sectionBanqueteContainer{
     width: 100%;
     max-width: 50rem;
     height: fit-content;
@@ -39,20 +47,31 @@ color: vars.$color-title;
     margin: 0 auto;
 }
 
-.historiaBanqueteContainer > img{
+
+
+.imageHistoria{
     width: 100%;
     max-width: 30rem;
  
 }
 
+.imageElenco{
+    width: 100%;
+    max-width: 20rem;
+}
 
-
+.nadiaFondo{
+    width: 100%;
+    max-width: 25rem;
+    position: fixed;
+    bottom:0;
+}
 @media(min-width:768px){
     .headerBanquete > h1 {
         font-size: 3.5rem;
     }
     
-.historiaBanqueteContainer {
+.sectionBanqueteContainer {
     align-items: flex-end;
 }
 }

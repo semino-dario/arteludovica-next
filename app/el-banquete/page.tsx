@@ -8,6 +8,7 @@ import styles from '../styles/page.module.scss'
 import { imagesBanquete, comentariosBanquete } from '../data/data';
 import Criticas from '../components/Criticas';
 import HistoriaBanquete from '../components/el-banquete/HistoriaBanquete';
+import ElencoBanquete from '../components/el-banquete/ElencoBanquete';
 
 export default function BanqueteHome() {
   return (
@@ -35,13 +36,16 @@ const Content = () => {
           />  
         </div>
         { section === "main-image" ?
-        <h1>IMAGEN PRINCIPAL</h1>
+      <img className={styles.nadiaFondo} 
+        src="/assets/images/imagenes-banquete/banquete-4.png"  
+        alt="imagen de la obra"/>
+
         :
         section === "historia" ?
         <HistoriaBanquete/>
         :
         section === "elenco" ?
-        <h1>elenco</h1>
+        <ElencoBanquete/>
         :
         section === "galeria" ?
         <GalleryObras
