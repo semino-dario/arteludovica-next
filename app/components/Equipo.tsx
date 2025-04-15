@@ -5,7 +5,9 @@ export default function Equipo() {
 
 
     return (
-        <section className={styles.containerSection}>
+        <section 
+            id={"equipo"}
+            className={styles.containerSection}>
             <h1 className={styles.titleSection}>Equipo</h1>
             <p className={styles.textHome}>Click en la foto para saber quién es quién...</p>
             <EquipoImage/>

@@ -20,7 +20,9 @@ export default function Textos() {
     setPdfName('');
   }
     return (
-        <section className={`${styles.containerSection}`}>
+        <section 
+          id={"textos-obras"}
+          className={`${styles.containerSection}`}>
           <h1 className={styles.titleSection}>Textos</h1>
           <p className={styles.textHome}>Se pueden descargar en PDF los textos de las últimas dos obras estrenadas.</p>
          <div className={styles.containerTextos}>

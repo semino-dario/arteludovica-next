@@ -4,7 +4,9 @@ export default function Footer() {
 
     return (
         
-        <section className={`${styles.containerSection} ${styles.footer}`}>
+        <section 
+            id={"colofon"}
+            className={`${styles.containerSection} ${styles.footer}`}>
             <div className={styles.borderBottom}></div>
             <h1 className={styles.titleSection}>Colofón</h1>
             <p className={styles.textHome}>Este sitio comenzó a estar en línea en abril de 2023. <br /> Muchas gracias por tu visita.</p>

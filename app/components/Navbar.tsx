@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../styles/page.module.scss";
+import Link from "next/link";
 
   const NavBar = () => {
  const [isActive, setIsActive] = useState(false);
@@ -19,27 +20,27 @@ import styles from "../styles/page.module.scss";
     <nav 
     className={`${styles.navContainer} ${isActive ? styles.active : ""}`}>
       <div className={styles.barraElementos}>
-        <a className={styles.itemsBarra} href="#titulo-principal" onClick={closeNav}>
+        <Link className={styles.itemsBarra} href="/" onClick={closeNav}>
           INICIO
-        </a>
-        <a className={styles.itemsBarra} href="#obras" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#obras" onClick={closeNav}>
           OBRAS
-        </a>
-        <a className={styles.itemsBarra} href="#musica-odamil" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#musica-odamil" onClick={closeNav}>
           MÚSICA
-        </a>
-        <a className={styles.itemsBarra} href="#textos-obras" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#textos-obras" onClick={closeNav}>
           TEXTOS
-        </a>
-        <a className={styles.itemsBarra} href="#territorios-galeria" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#territorios-galeria" onClick={closeNav}>
           TERRITORIOS
-        </a>
-        <a className={styles.itemsBarra} href="#equipo" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#equipo" onClick={closeNav}>
           EQUIPO
-        </a>
-        <a className={styles.itemsBarra} href="#colofon" onClick={closeNav}>
+        </Link>
+        <Link className={styles.itemsBarra} href="/#colofon" onClick={closeNav}>
           COLOFÓN
-        </a>
+        </Link>
       </div>
       <label className={styles.label}  >
       <input className={styles.input}  

@@ -22,7 +22,9 @@ const Territorios: React.FC<TerritoriosProps> = ({ images }) => {
 
   return (
 
-    <section className={styles.containerSection}>
+    <section 
+      id={"territorios-galeria"}
+      className={styles.containerSection}>
         <h1 className={styles.titleSection}>Territorios</h1>
         <p className={styles.textHome} >Lugares, personas y momentos que formaron nuestro viaje.</p>
         <div className={styles.carousel}>

@@ -1,7 +1,6 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
-import styles from "./styles/page.module.scss";
 
 export const metadata: Metadata = {
   title: "Arteludovica",

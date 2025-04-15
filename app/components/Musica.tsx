@@ -28,7 +28,9 @@ export default function Musica() {
     }
     return (
 
-        <section className={styles.musicaSection}>
+        <section 
+        id={"musica-odamil"}
+        className={styles.musicaSection}>
           <div className={styles.textMusicContainer}>
                 <h1 className={styles.titleSection}>Música</h1>
                 <p className={styles.textHome}>Julián Gil Ostapiewicz, Adriel Corias Iacovino y Martín Braccone, los integrantes de Odamil Yotsé, compusieron la música de nuestra primera obra. Es buenísima.</p>
