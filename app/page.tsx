@@ -1,4 +1,5 @@
 "use client";
+import styles from './styles/page.module.scss'
 import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
 import HeaderHome from "./components/HeaderHome";
@@ -11,7 +12,7 @@ import Textos from "./components/Textos";
 
 export default function Home() {
   return (
-    <div >
+    <div className={styles.background}>
       <NavBar/>
       <HeaderHome/>
       <Obras/>

@@ -25,7 +25,7 @@ export default function RootLayout({
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={styles.background}>
+      <body>
         {children}
       </body>
 
