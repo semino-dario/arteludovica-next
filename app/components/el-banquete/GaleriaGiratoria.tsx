@@ -17,8 +17,8 @@ const GaleriaGiratoria: React.FC = () => {
           <span
             key={numero}
             className={styles.spanes}
-            style={{ ["--i" as any]: `${numero}` }}
-          >
+            style={{ ["--i" as keyof React.CSSProperties]: `${numero}` }}
+            >
             <Image
               className={styles.imagenGiratoria}
               src={rutaImagen}
